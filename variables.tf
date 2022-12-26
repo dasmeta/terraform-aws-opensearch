@@ -1,22 +1,21 @@
-variable "aws_access_key" {
-  default = "AKIAYHLZZFMQIK3SSVII"
-}
+# variable "aws_access_key" {
+#   default = "AKIAYHLZZFMQIK3SSVII"
+# }
 
-variable "aws_secret_key" {
-  default = "SZIoJzdxPPoRhds1GJPxbBnNIsJ7y3SiE2jSzGD9"
+# variable "aws_secret_key" {
+#   default = "SZIoJzdxPPoRhds1GJPxbBnNIsJ7y3SiE2jSzGD9"
+# }
+
+variable "domain" {
+  type = string
 }
-output "arn" {
-  value = aws_elasticsearch_domain.das-meta.arn
+variable "instance_type" {
+  type = string
 }
-output "domain_id" {
-  value = aws_elasticsearch_domain.das-meta.domain_id
+variable "tag_domain" {
+  type = string
 }
-output "domain_name" {
-  value = aws_elasticsearch_domain.das-meta.domain_name
+variable "volume_type" {
+  type = string
 }
-output "endpoint" {
-  value = aws_elasticsearch_domain.das-meta.endpoint
-}
-output "kibana_endpoint" {
-  value = aws_elasticsearch_domain.das-meta.kibana_endpoint
-}
+variable "ebs_volume_size" {}
