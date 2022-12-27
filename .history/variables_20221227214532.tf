@@ -18,5 +18,6 @@ variable "elasticsearch_version" {
 }
 
 variable "subnet_ids" {
+  type    = string
   default = "subnet-016e77be32f1570f2"
 }

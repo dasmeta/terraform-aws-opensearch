@@ -13,10 +13,11 @@ variable "volume_type" {
 variable "ebs_volume_size" {}
 
 variable "elasticsearch_version" {
-  type    = string
+  type = string
   default = "7.10"
 }
 
-variable "subnet_ids" {
+variable "subnet_id" {
+  type = string
   default = "subnet-016e77be32f1570f2"
 }

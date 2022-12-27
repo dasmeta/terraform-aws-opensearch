@@ -1,6 +1,6 @@
 resource "aws_elasticsearch_domain" "es" {
   domain_name           = var.domain
-  elasticsearch_version = var.elasticsearch_version
+  elasticsearch_version = var.e
 
   cluster_config {
     instance_type = var.instance_type
@@ -9,7 +9,7 @@ resource "aws_elasticsearch_domain" "es" {
     automated_snapshot_start_hour = 23
   }
   vpc_options {
-    subnet_ids = var.subnet_ids
+    subnet_ids = ["subnet-016e77be32f1570f2"] #subnet-016e77be32f1570f2
   }
   ebs_options {
     ebs_enabled = var.ebs_volume_size > 0 ? true : false

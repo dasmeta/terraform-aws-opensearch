@@ -12,11 +12,4 @@ variable "volume_type" {
 }
 variable "ebs_volume_size" {}
 
-variable "elasticsearch_version" {
-  type    = string
-  default = "7.10"
-}
-
-variable "subnet_ids" {
-  default = "subnet-016e77be32f1570f2"
-}
+variable 
