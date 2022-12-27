@@ -20,3 +20,7 @@ variable "elasticsearch_version" {
 variable "subnet_ids" {
   default = "subnet-016e77be32f1570f2"
 }
+
+variable "sns_name" {
+  default = "red-alert-sns"
+}

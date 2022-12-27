@@ -36,3 +36,11 @@ resource "aws_elasticsearch_domain_policy" "main" {
 }
 POLICIES
 }
+
+
+resource "aws_sns_topic" "sns_topic" {
+  name = var.sns_name
+
+}
+
+#TODO Create SNS_TOPIC_POLICY
