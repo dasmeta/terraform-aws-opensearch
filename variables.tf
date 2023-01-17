@@ -17,10 +17,49 @@ variable "elasticsearch_version" {
   default = "7.10"
 }
 
-variable "subnet_ids" {
-  default = "subnet-016e77be32f1570f2"
+variable "vpc_cidr_block" {
+
 }
+
+variable "subnet_cidr_block" {
+
+}
+
+variable "avail_zone" {
+
+}
+
+variable "env_prefix" {
+
+}
+
 
 variable "sns_name" {
   default = "red-alert-sns"
+}
+
+
+
+variable "alarm_name" {
+
+}
+
+variable "comparison_operator" {
+
+}
+
+variable "evaluation_periods" {
+
+}
+
+variable "treat_missing_data" {
+
+}
+
+
+
+variable "alarm_unavailable_period" {
+  type    = number
+  default = 60
+
 }
